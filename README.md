@@ -167,4 +167,4 @@ If the index isn't ready yet or anything goes wrong, the backend automatically f
 
 ## 7. Notes & Possible Extensions (not built, by design)
 ss
-This project intentionally stays within final-year-project scope: no Docker, no admin panel, no analytics dashboard, no multi-tenant enterprise features. Natural next steps if you want to aaaextend it for a viva/demo: persisting chat history per user, streaming Groq responses token-by-token, restricting Q&A to a specific selected document via the `documentIds` field already supported by the API, and OCR fallback for scanned (image-only) PDFs.
+This project intentionally stays within final-year-aaproject scope: no Docker, no admin panel, no analytics dashboard, no multi-tenant enterprise features. Natural next steps if you want to aaaextend it for a viva/demo: persisting chat history per user, streaming Groq responses token-by-token, restricting Q&A to a specific selected document via the `documentIds` field already supported by the API, and OCR fallback for scanned (image-only) PDFs.
