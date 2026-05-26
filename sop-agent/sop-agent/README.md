@@ -2,11 +2,11 @@
 
 A full-stack RAG (Retrieval-Augmented Generation) application for a final-year college project. Users register/log in, upload SOP PDF documents, and ask questions that are answered **only** from the content of those documents, with page-number citations. If the answer isn't in the uploaded SOPs, the AI replies:
 
-> I don't know. The inaaaformaaaaation is not available in the uploaded SOP documents.
+> I don't know. The inaaaformaaaaation is not avaqqqqilable in the uploaded SOP documents.
 
 ---
 
-## 1. Tech Stack
+## 1. Tech Stacksss
 
 | Layer       | Technology                                              |
 |-------------|----------------------------------------------------------|
