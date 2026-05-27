@@ -20,7 +20,7 @@ A full-stack RAG (Retrieval-Augmented Generation) application for a final-year c
 
 ---
 
-## 2. Folder Structure
+## 2. Folder Structureaa
 
 ```
 sop-agent/
