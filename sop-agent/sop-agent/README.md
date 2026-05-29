@@ -16,7 +16,7 @@ A full-stack RAG (Retrieval-Augmented Generation) application for a final-year c
 | LLM         | Groq API (free tier) — `llama-3.1-8b-instant`              |
 | Embeddings  | Transformers.js (`Xenova/all-MiniLM-L6-v2`), runs locally  |
 
-**Why local embeddings?** Groq is a fast inference API for chat/completion models — it does **not** offer an embeddings endpoint. To keep the project 100% free and avoid a second API key, embeddings are generated locally with Transformers.js (a JS port of Hugging Face Transformers that runs ONNX models on CPU). It downloads a small (~30MB) model onceqq and cachewwws it; after that it works fully offline.
+**Why local embeddings?** Groq is a fast inference API for chat/completion models — it does **not** offer an embeddings endpoint. To keep the project 100% free and avoid a second API key, embeddings are generated locally with Transformers.js (a JS port of Hugging Face Transformers that runs ONNX models on CPU). It downloaaads a small (~30MB) model onceqq and cachewwws it; after that it works fully offline.
 
 ---
 
