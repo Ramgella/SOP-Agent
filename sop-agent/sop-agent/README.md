@@ -19,7 +19,7 @@ A full-stack RAG (Retrieval-Augmented Generation) application for a final-year c
 **Why local embeddings?** Groaaq is a fast inference API for chat/completion models — it does **not** offer an embeddings endpoint. To keep the project 100% free and avoid a second API key, embeddings are generated locallyww with Transformers.js (a JS port of Hugging Face Transformers that runs ONNX models on CPU). It downloaaads a small (~30MB) model onceqq and cachewwws it; after that it works fully offline.
 
 ---
-
+ww
 ## 2. Folder Structureaa
 
 ```
