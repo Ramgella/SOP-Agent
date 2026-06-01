@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpsMind AI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+    background:#f8fafc;
+}
+</style>
+
+</head>
+<body>
+
+<div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white p-6">
+        <h1 class="text-2xl font-bold mb-10">
+            OpsMind AI
+        </h1>
+
+        <nav class="space-y-4">
+            <a href="#" class="block hover:text-blue-400">Dashboard</a>
+            <a href="#" class="block hover:text-blue-400">Upload SOP</a>
+            <a href="#" class="block hover:text-blue-400">Knowledge Base</a>
+            <a href="#" class="block hover:text-blue-400">Search SOPs</a>
+            <a href="#" class="block hover:text-blue-400">Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-auto">
+
+        <!-- Navbar -->
+        <header class="bg-white border-b p-4 flex justify-between items-center">
+            <input
+                type="text"
+                placeholder="Search documents..."
+                class="border rounded-lg px-4 py-2 w-96"
+            >
+
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-slate-300"></div>
+                <span>Admin</span>
+            </div>
+        </header>
+
+        <div class="p-8">
+
+            <!-- Welcome -->
+            <h1 class="text-3xl font-bold mb-6">
+                Enterprise SOP Agent Dashboard
+            </h1>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-4 gap-5">
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Documents</h3>
+                    <p class="text-3xl font-bold">86</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Chunks</h3>
+                    <p class="text-3xl font-bold">12,430</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Queries</h3>
+                    <p class="text-3xl font-bold">159</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Uploads Today</h3>
+                    <p class="text-3xl font-bold">0</p>
+                </div>
+
+            </div>
+
+            <!-- Upload Section -->
+            <div class="bg-white rounded-xl shadow mt-8 p-8">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    Upload SOP Documents
+                </h2>
+
+                <div class="border-2 border-dashed border-gray-300 rounded-xl p-16 text-center">
+
+                    <p class="text-lg text-gray-600">
+                        Drag & Drop PDF Files Here
+                    </p>
+
+                    <button
+                        class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                        Upload PDF
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Search Section -->
+            <div class="bg-white rounded-xl shadow mt-8 p-8">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    Search SOPs
+                </h2>
+
+                <div class="flex gap-4">
+
+                    <input
+                        type="text"
+                        placeholder="How do I process a refund?"
+                        class="border rounded-lg px-4 py-3 flex-1"
+                    >
+
+                    <button
+                        class="bg-blue-600 text-white px-6 rounded-lg hover:bg-blue-700">
+                        Ask
+                    </button>
+
+                </div>
+
+                <!-- Result -->
+                <div class="mt-6 bg-slate-50 p-5 rounded-lg border">
+
+                    <h3 class="font-bold mb-2">
+                        Retrieved Source
+                    </h3>
+
+                    <p>
+                        Refund requests must be approved by the department
+                        manager before they are processed through the finance
+                        system.
+                    </p>
+
+                    <div class="mt-3 text-sm text-gray-500">
+                        Source: refund_policy.pdf |
+                        Page: 12 |
+                        Similarity: 94%
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Recent Documents -->
+            <div class="bg-white rounded-xl shadow mt-8 p-8">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    Knowledge Base
+                </h2>
+
+                <table class="w-full border-collapse">
+
+                    <thead>
+                        <tr class="bg-slate-100">
+                            <th class="p-3 text-left">File Name</th>
+                            <th class="p-3 text-left">Pages</th>
+                            <th class="p-3 text-left">Chunks</th>
+                            <th class="p-3 text-left">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b">
+                            <td class="p-3">refund_policy.pdf</td>
+                            <td class="p-3">35</td>
+                            <td class="p-3">220</td>
+                            <td class="p-3 text-green-600">Indexed</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="p-3">leave_policy.pdf</td>
+                            <td class="p-3">20</td>
+                            <td class="p-3">105</td>
+                            <td class="p-3 text-green-600">Indexed</td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-3">travel_policy.pdf</td>
+                            <td class="p-3">18</td>
+                            <td class="p-3">92</td>
+                            <td class="p-3 text-green-600">Indexed</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
