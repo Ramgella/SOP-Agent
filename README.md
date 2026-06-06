@@ -2,7 +2,7 @@
 
 A full-stack RAG (Retrieval-Augmented Generation) application for a final-year college project. Users register/log in, upload SOP PDF documents, and ask questions that are answered **only** from the content of those documents, with page-number citations. If the answer isn't in the uploaded SOPs, the AI replies:ee
 ww
-> I don't know. The information is not available in the uploaded SOP documents.
+> I don't know. The information is not available in the uploaded SOP documents.ss
 ee
 ---ee
 
