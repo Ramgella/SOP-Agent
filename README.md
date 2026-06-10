@@ -19,7 +19,7 @@ eeee
 **Why local embeddings?** Groq is a fast inference API for chat/completion models — it does **not** offer an embeddings endpoint. To keep the project 100% free and avoid a second API key, embeddings are generated locally with Transformers.js (a JS port of Hugging Face Transformers that runs ONNX models on CPU). It downloads a small (~30MB) model once and caches it; after that it works fully offline.
 
 ---
-ss
+ssddd
 ## 2. Folder Structure
 
 ```
