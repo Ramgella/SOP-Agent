@@ -47,7 +47,7 @@ sop-agent/
         ├── api/axios.js            # axios instance + auth token interceptor
         ├── context/AuthContext.jsx # login/register/logout statess
         ├── components/             # Sidebar, ChatMessage, UploadModal, etc.
-        └── pages/                  # Login, Register, Chat, Documents
+        └── pages/                  # Login, Register, Chat, Documentsss
 ```
 
 ---
