@@ -60,7 +60,7 @@ sop-agent/
 | name      | String   |                    |
 | email     | String   | unique             |
 | password  | String   | bcrypt hashed      |
-
+sss
 **documents** (PDF metadata)
 | Field          | Type     | Notes                                |
 |----------------|----------|---------------------------------------|
