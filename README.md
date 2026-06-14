@@ -78,7 +78,7 @@ sss
 | Field      | Type      | Notes                              |
 |------------|-----------|--------------------------------------|
 | document   | ObjectId  | ref Document                       |
-| user       | ObjectId  | ref User (lets us scope search per user) |
+| user       | ObjectId  | ref User (lets us scope search per user) |dd
 | text       | String    | chunk content (~1000 chars)          |
 | pageNumber | Number    | source page, used for citations      |
 | chunkIndex | Number    | order within the document            |
