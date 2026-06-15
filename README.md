@@ -96,7 +96,7 @@ All routes except register/login require `Authorization: Bearer <token>`.
 | POST   | `/api/auth/login`       | `{ email, password }`                  | Returns `{ token, user }`                     |
 | GET    | `/api/auth/me`          | —                                       | Current user profile                          |
 | GET    | `/api/documents`        | —                                       | List the logged-in user's documents           |
-| POST   | `/api/documents/upload` | `multipart/form-data`, field `file`    | Upload + process a PDF (extract → chunk → embed → store) |
+| POST   | `/api/documents/upload` | `multipart/form-data`, field `file`    |ss Upload + process a PDF (extract → chunk → embed → store) |
 | DELETE | `/api/documents/:id`    | —                                       | Delete a document, its file, and its chunks   |
 | POST   | `/api/chat/ask`         | `{ question, documentIds? }`           | Returns `{ answer, sources: [{documentId, documentName, pageNumber}] }` |
 
