@@ -145,7 +145,7 @@ Open `http://localhost:5173`, register a new account, and start uploading SOP PD
 
 By default the backend retrieves relevant chunks by computing cosine similarity in Node — this works immediately with zero Atlas configuration and is fine for a typical college-project dataset. If you want to demonstrate Atlas's native `$vectorSearch` instead:
 
-1. In Atlas, open your cluster → **Search** tab → **Create Search Index** → **JSON Editor**.
+1. In Atlas, open your cluster → **Search** tab → **Create Search Index** → **JSOeeN Editor**.
 2. Select database `sop-agent`, collection `chunks`, and paste the contents of `backend/atlas-vector-index.json`.
 3. Wait for the index status to become **Active** (usually under a minute).
 4. In `backend/.env`, set `USE_ATLAS_VECTOR_SEARCH=true`.
