@@ -1,0 +1,19 @@
+{
+  "_comment": "Paste this into Atlas UI -> Database -> your cluster -> Search -> Create Search Index -> JSON Editor. Database/collection: sop-agent.chunks. Only needed if you set USE_ATLAS_VECTOR_SEARCH=true in .env",
+  "name": "vector_index",
+  "type": "vectorSearch",
+  "definition": {
+    "fields": [
+      {
+        "type": "vector",
+        "path": "embedding",
+        "numDimensions": 384,
+        "similarity": "cosine"
+      },
+      {
+        "type": "filter",
+        "path": "user"
+      }
+    ]
+  }
+}
