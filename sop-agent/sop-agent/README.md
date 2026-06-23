@@ -22,7 +22,7 @@ A full-stack RAG (Retrieval-Augmented Generation) application for a final-year c
 ww
 ## 2. Folder Structureaa
 
-```
+```'''''
 sop-agent/
 ├── backend/
 │   ├── server.js                  # entry point
