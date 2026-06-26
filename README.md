@@ -40,13 +40,6 @@ SOP Agent solves this by enabling semantic search using AI-powered Retrieval-Aug
 
 ---
 
-# 🎬 Demo
-
-(Optional: add demo GIF)
-
-```md
-![Demo](assets/demo.gif)
-```
 
 ---
 
@@ -228,12 +221,3 @@ http://localhost:5173
 
 ---
 
-# 📜 License
-
-Academic Project — Educational Use Only
-
----
-
-<p align="center">
-Built with ❤️ by Team SOP Agent
-</p>
