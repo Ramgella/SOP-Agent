@@ -1,3 +1,4 @@
+
 ````md
 <h1 align="center">📄 SOP Agent</h1>
 <h3 align="center">AI-Powered SOP Document Question Answering using RAG</h3>
@@ -12,10 +13,23 @@
   <img src="https://img.shields.io/badge/Database-MongoDB-darkgreen?style=for-the-badge">
   <img src="https://img.shields.io/badge/LLM-Groq-orange?style=for-the-badge">
 </p>
+=======
+# 📄 SOP Agent
+
+### AI-Powered SOP Question Answering using Retrieval-Augmented Generation (RAG)
+
+Upload SOP PDF documents, ask questions, and get accurate AI-generated answers with source citations.
+
+![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge)
+![Backend](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge)
+![Database](https://img.shields.io/badge/Database-MongoDB-success?style=for-the-badge)
+![LLM](https://img.shields.io/badge/LLM-Groq-orange?style=for-the-badge)
+
 
 ---
 
 ## 🚀 Overview
+
 
 **SOP Agent** is a full-stack **RAG (Retrieval-Augmented Generation)** application built as a final-year engineering project.
 
@@ -28,10 +42,25 @@ Users can:
 If information is unavailable in uploaded documents, the AI responds:
 
 > I don't know. The information is not available in the uploaded SOP documents.
+=======
+SOP Agent is a full-stack RAG-based application developed as a final-year engineering project.
+
+It enables users to:
+
+* Securely register and login
+* Upload SOP PDF documents
+* Ask questions about uploaded SOPs
+* Receive context-aware answers with citations
+
+If the required information is unavailable, the system responds:
+
+> I don't know. The information is not available in uploaded SOP documents.
+
 
 ---
 
 ## ✨ Features
+
 
 ✅ Secure User Authentication  
 ✅ SOP PDF Upload & Processing  
@@ -41,6 +70,15 @@ If information is unavailable in uploaded documents, the AI responds:
 ✅ AI-Powered Question Answering  
 ✅ Page Number Citations  
 ✅ Multi-document Support  
+=======
+* 🔐 JWT Authentication
+* 📄 SOP PDF Upload
+* 🔍 Semantic Search
+* 🧠 RAG-based Question Answering
+* 📌 Citation Support
+* ⚡ Fast Groq Inference
+* 💾 MongoDB Storage
+
 
 ---
 
@@ -58,6 +96,7 @@ Embeddings Generation
 Vector Search
    ↓
 Groq LLM Response
+
 ````
 
 ### Workflow
@@ -69,10 +108,14 @@ Groq LLM Response
 5. Relevant chunks retrieved using cosine similarity
 6. Groq LLM generates grounded answer
 7. Citations returned with page numbers
+=======
+```
+
 
 ---
 
 ## 🛠 Tech Stack
+
 
 | Layer          | Technology                           |
 | -------------- | ------------------------------------ |
@@ -82,6 +125,16 @@ Groq LLM Response
 | Authentication | JWT                                  |
 | LLM            | Groq API (`llama-3.1-8b-instant`)    |
 | Embeddings     | Transformers.js (`all-MiniLM-L6-v2`) |
+=======
+| Layer          | Technology                  |
+| -------------- | --------------------------- |
+| Frontend       | React + Vite + Tailwind CSS |
+| Backend        | Node.js + Express.js        |
+| Database       | MongoDB Atlas               |
+| Authentication | JWT                         |
+| LLM            | Groq API                    |
+| Embeddings     | Transformers.js             |
+
 
 ---
 
@@ -92,6 +145,7 @@ sop-agent/
 │
 ├── backend/
 │   ├── server.js
+
 │   ├── src/
 │   │   ├── app.js
 │   │   ├── config/
@@ -100,16 +154,37 @@ sop-agent/
 │   │   ├── controllers/
 │   │   ├── middleware/
 │   │   └── services/
+=======
+│   ├── uploads/
+│   └── src/
+│       ├── config/
+│       ├── controllers/
+│       ├── middleware/
+│       ├── models/
+│       ├── routes/
+│       ├── services/
+│       └── utils/
+
 │
 └── frontend/
+    ├── index.html
+    ├── vite.config.js
     └── src/
+
         ├── components/
         ├── pages/
         ├── api/
         └── context/
+=======
+        ├── api/
+        ├── components/
+        ├── context/
+        └── pages/
+ (Enhanced README with screenshots)
 ```
 
 ---
+
 
 ## 🗄 Database Schema
 
@@ -166,6 +241,31 @@ cd sop-agent
 
 ---
 
+=======
+## 🔌 API Routes
+
+| Method | Route                 | Description     |
+| ------ | --------------------- | --------------- |
+| POST   | /api/auth/register    | Register user   |
+| POST   | /api/auth/login       | Login           |
+| GET    | /api/auth/me          | User profile    |
+| GET    | /api/documents        | List documents  |
+| POST   | /api/documents/upload | Upload PDF      |
+| DELETE | /api/documents/:id    | Delete document |
+| POST   | /api/chat/ask         | Ask question    |
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone <repo-url>
+cd sop-agent
+```
+
+>>>>>>> 629e8eb (Enhanced README with screenshots)
 ### Backend Setup
 
 ```bash
@@ -175,12 +275,22 @@ cp .env.example .env
 npm run dev
 ```
 
+<<<<<<< HEAD
 Set environment variables:
 
 ```env
 MONGO_URI=your_mongodb_uri
 GROQ_API_KEY=your_groq_key
 JWT_SECRET=your_secret
+=======
+Configure `.env`
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+GROQ_API_KEY=your_api_key
+>>>>>>> 629e8eb (Enhanced README with screenshots)
 ```
 
 ---
@@ -193,14 +303,21 @@ npm install
 npm run dev
 ```
 
+<<<<<<< HEAD
 Open:
 
 ```bash
+=======
+Frontend runs on:
+
+```text
+>>>>>>> 629e8eb (Enhanced README with screenshots)
 http://localhost:5173
 ```
 
 ---
 
+<<<<<<< HEAD
 ## 📷 Application Screenshots
 
 Add screenshots here:
@@ -234,6 +351,25 @@ Embeddings are generated locally using **Transformers.js**.
 * Document filtering
 * Streaming responses
 * Native MongoDB Vector Search
+=======
+## 📷 Screenshots
+
+
+
+![Login](assets/login.png)
+![Dashboard](assets/dashboard.png)
+![Chat](assets/chat.png)
+
+
+---
+
+## 🔮 Future Enhancements
+
+* OCR for scanned PDFs
+* Chat history
+* Multiple document filtering
+* Streaming responses
+>>>>>>> 629e8eb (Enhanced README with screenshots)
 * Admin analytics dashboard
 
 ---
@@ -247,6 +383,7 @@ Embeddings are generated locally using **Transformers.js**.
 
 ---
 
+<<<<<<< HEAD
 ## 📜 License
 
 This project is developed for academic and educational purposes.
@@ -257,3 +394,7 @@ This project is developed for academic and educational purposes.
 ⭐ If you like this project, consider starring the repository!
 </p>
 ```
+=======
+
+⭐ Star this repository if you found it useful!
+>>>>>>> 629e8eb (Enhanced README with screenshots)
